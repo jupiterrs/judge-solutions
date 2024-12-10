@@ -1,0 +1,38 @@
+#better solution
+#time 62ms, 0kb
+
+#but the code seems to show 184ms for me, no diff
+
+# m = [list(map(int, input().split())) for i in range(5)]
+# for i in range(5):
+#     for j in range(5):
+#         if m[i][j] == 1:
+#             print(abs(i - 2) + abs(j - 2))
+#             break
+
+
+#my solution
+#time 184ms, space 0kb
+# def soln():
+
+#without defining the function is 154ms
+
+lst = []
+
+for i in range(5):
+
+    a = list(map(int, input().split()))
+
+    lst.append(a)
+
+for i in range(5):
+
+    for j in range(5):
+
+        if lst[i][j] == 1:
+
+            print(abs(j - 2) + abs(i - 2))
+
+            break
+
+# soln()
